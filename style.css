@@ -124,7 +124,8 @@ header nav ul {
 
 .product {
     width: 300px;
-    height: 300px;    
+    height: 300px; 
+    padding: 15px;   
 }
 
 .product img {
@@ -136,7 +137,6 @@ header nav ul {
 }
 
 .product p {
-    /* padding-top: 5px; */
     font-size: 1.3rem;
     font-weight: 700;
 }
