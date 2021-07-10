@@ -24,6 +24,7 @@ header{
     border-bottom: 1px solid seashell;
     position: fixed;
     z-index: 1;
+    background: #000;
 }
 
 header img{
@@ -44,6 +45,152 @@ header nav ul li {
 header nav ul {
     margin-right: 10px;
 }
+
+.center {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 1200px;
+    background: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+.center-text {
+    width: 100%;
+    background: #000;
+    align-items: center; 
+}
+
+/* TEA PICTURES PART */
+
+.tea-month {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tea-month #header {
+    padding: 0;
+    font-family: cobblestone, serif;
+}
+
+.products {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    
+}
+
+.product img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 0;
+}
+
+.product p {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* INFORMATION/LOCATION PART */
+
+.information {
+    height: 500px;
+    opacity: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg') no-repeat center;
+    border-radius: 10px;
+}
+
+.locations {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.location {
+    padding: 15px;
+    border: 1px solid seashell;
+    background: #000;
+    opacity: 1;
+    flex-basis: 300px;
+    margin: 0 20px;
+}
+
+.location h3 {
+    font-weight: 800; 
+}
+
+.contact {
+    height: 200px;
+}
+.contact h2{
+    font-weight: 700;
+    padding: 0 20px;
+    display: inline-block;
+    margin: 0;
+    margin-top: 5px;
+    color: seashell;
+    text-decoration: none;
+    transition: ease-in-out .3s;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+} 
+
+.contact h2:hover{
+    border-color: beige;
+    padding: 0 3px;
+    color: bisque;
+    border-color: bisque;
+    
+} 
+
+.contact h5 a{
+    color: seashell;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.contact h5 a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    position: relative;
+    opacity: 1;
+    bottom: 0;
+    text-align: left;
+    min-height: 40px;
+    background-color: black;
+}
+
+footer h4 {
+    color: seashell;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+
+
 
 
 
