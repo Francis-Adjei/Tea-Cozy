@@ -25,6 +25,7 @@ header{
     position: fixed;
     z-index: 1;
     background: #000;
+    cursor: pointer;
 }
 
 header img{
@@ -44,6 +45,43 @@ header nav ul li {
 
 header nav ul {
     margin-right: 10px;
+}
+.hover-nav {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hover-nav:after {
+    display:block;
+    content: '';
+    border-top: solid 5px #fff;
+    transform: scaleX(0);  
+    transition: transform 350ms ease-in-out;
+    transform-origin:50% 50%;
+
+}
+.hover-nav:hover:after { 
+    transform: scaleX(1);
+    transform-origin:0% 100%;
+    border-color: bisque;
+   
+}
+
+#menu {
+    display: none;
+    position: absolute;
+}
+
+@media only screen and (max-width: 642px) {
+    #menu {
+        display: inline;
+        position: relative;
+    }
+    
+    .options {
+        display: none;
+        position: relative;
+    }
 }
 
 .center {
@@ -65,7 +103,7 @@ header nav ul {
     align-items: center; 
 }
 
-/* TEA PICTURES PART */
+
 
 .tea-month {
     max-width: 1000px;
@@ -86,9 +124,7 @@ header nav ul {
 
 .product {
     width: 300px;
-    height: 300px;
-    padding: 15px;
-    
+    height: 300px;    
 }
 
 .product img {
@@ -100,20 +136,26 @@ header nav ul {
 }
 
 .product p {
+    /* padding-top: 5px; */
     font-size: 1.3rem;
     font-weight: 700;
 }
 
-/* INFORMATION/LOCATION PART */
+
 
 .information {
     height: 500px;
     opacity: 1;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0;
     text-align: center;
     background: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg') no-repeat center;
     border-radius: 10px;
+}
+
+.information h2{
+    padding-top: 40px;
 }
 
 .locations {
@@ -121,15 +163,16 @@ header nav ul {
     align-content: space-around;
     flex-wrap: wrap;
     justify-content: center;
+    /* padding-top: 15px;  */
 }
 
 .location {
-    padding: 15px;
+    padding: 0 10px 10px 10px;
     border: 1px solid seashell;
     background: #000;
     opacity: 1;
     flex-basis: 300px;
-    margin: 0 20px;
+    margin: 5px 20px;
 }
 
 .location h3 {
@@ -160,6 +203,10 @@ header nav ul {
     
 } 
 
+.contact h5{
+    padding-top: 10px;
+}
+
 .contact h5 a{
     color: seashell;
     text-decoration: none;
@@ -173,6 +220,7 @@ header nav ul {
 
 footer {
     position: relative;
+    margin-left: 20px;
     opacity: 1;
     bottom: 0;
     text-align: left;
